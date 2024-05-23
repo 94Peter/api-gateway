@@ -30,7 +30,7 @@ merge-spec:
 	-output /workdir/doc/merged.yml
 
 gen-setting-json:
-	docker run -it \
+	docker run \
 	-v $$PWD:/workdir 94peter/openapi-cli:dev /main togs \
 	-spec /workdir/oosa-specification.yml \
 	-output /workdir/output.json
