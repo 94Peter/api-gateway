@@ -4,12 +4,10 @@ type: exec
 name: default
 
 platform:
-  os: linux
+  os: darwin
   arch: amd64
 
 steps:
 - name: greeting
   commands:
   - echo hello world
-
-...
