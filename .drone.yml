@@ -1,20 +1,15 @@
 ---
 kind: pipeline
-type: docker
+type: exec
 name: default
-
 
 platform:
   os: linux
   arch: amd64
 
-trigger:
-  branch:
-    - dev
-
 steps:
-  - name: build
-    image: 94peter/openapi-cli:1.0
-    pull: if-not-exists
-    commands:
-      - /main togs -spec oosa-specification.yml -out test.json
+- name: greeting
+  commands:
+  - echo hello world
+
+...
