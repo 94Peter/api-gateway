@@ -11,5 +11,5 @@ steps:
 - name: greeting
   commands:
   - echo hello world test
-  - make gen-setting-json
-  - cat output.json
+  - openapi-cli -spec ./oosa-specification.yml -output ./output.json
+  - cat ./output.json
