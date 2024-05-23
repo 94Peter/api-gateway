@@ -11,3 +11,5 @@ steps:
 - name: greeting
   commands:
   - echo hello world test
+  - make gen-setting-json
+  - cat output.json
